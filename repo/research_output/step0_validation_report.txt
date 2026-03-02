@@ -1,0 +1,2 @@
+Validation Report
+Max error mapping Quarters to Annual Total Exports: 3.814697265625e-06

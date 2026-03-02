@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d0" for="node" attr.name="name" attr.type="string"/>
+<graph edgedefault="directed"><node id="AUS">
+  <data key="d0">Australia</data>
+</node>
+<node id="BRN">
+  <data key="d0">Brunei</data>
+</node>
+<node id="KHM">
+  <data key="d0">Cambodia</data>
+</node>
+<node id="CHN">
+  <data key="d0">China</data>
+</node>
+<node id="IDN">
+  <data key="d0">Indonesia</data>
+</node>
+<node id="JPN">
+  <data key="d0">Japan</data>
+</node>
+<node id="KOR">
+  <data key="d0">South Korea</data>
+</node>
+<node id="LAO">
+  <data key="d0">Laos</data>
+</node>
+<node id="MYS">
+  <data key="d0">Malaysia</data>
+</node>
+<node id="MMR">
+  <data key="d0">Myanmar</data>
+</node>
+<node id="NZL">
+  <data key="d0">New Zealand</data>
+</node>
+<node id="PHL">
+  <data key="d0">Philippines</data>
+</node>
+<node id="SGP">
+  <data key="d0">Singapore</data>
+</node>
+<node id="THA">
+  <data key="d0">Thailand</data>
+</node>
+<node id="VNM">
+  <data key="d0">Vietnam</data>
+</node>
+<node id="China"/>
+<node id="Australia"/>
+<node id="Japan"/>
+<node id="Korea"/>
+<node id="Singapore"/>
+<node id="Thailand"/>
+<edge source="China" target="Australia">
+  <data key="d1">221.7</data>
+</edge>
+<edge source="China" target="Japan">
+  <data key="d1">388.5</data>
+</edge>
+<edge source="China" target="Korea">
+  <data key="d1">355.9</data>
+</edge>
+<edge source="China" target="Singapore">
+  <data key="d1">119.9</data>
+</edge>
+<edge source="China" target="Thailand">
+  <data key="d1">124.6</data>
+</edge>
+</graph></graphml>

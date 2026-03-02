@@ -1,0 +1,3 @@
+RCEP data (merged, single source)
+master_macro_quarterly.csv / master_quarterly_macro_2005_2024.csv: (iso3, quarter_t, ...)
+master_bilateral_quarterly.csv / master_quarterly_bilateral_2005_2024.csv: (reporter_iso, partner_iso, quarter_t, ...)

@@ -1,0 +1,411 @@
+2026-02-16 03:16:53,745 - utils - INFO - ============================================================
+2026-02-16 03:16:53,745 - utils - INFO - CEPII Gravity Database Acquisition
+2026-02-16 03:16:53,745 - utils - INFO - ============================================================
+2026-02-16 03:16:53,745 - utils - INFO - Downloading CEPII Gravity database...
+2026-02-16 03:16:53,745 - utils - INFO - URL: http://www.cepii.fr/DATA_DOWNLOAD/gravity/data/Gravity_V202211.zip
+2026-02-16 03:16:53,745 - utils - INFO - Downloading from http://www.cepii.fr/DATA_DOWNLOAD/gravity/data/Gravity_V202211.zip
+2026-02-16 03:16:56,493 - utils - ERROR - Download failed: 404 Client Error: Not Found for url: https://www.cepii.fr/DATA_DOWNLOAD/gravity/data/Gravity_V202211.zip
+2026-02-16 03:16:56,494 - utils - ERROR - Download failed
+2026-02-16 03:16:56,494 - utils - ERROR - Failed to download CEPII Gravity database
+2026-02-16 03:16:56,494 - utils - INFO - 
+MANUAL DOWNLOAD:
+2026-02-16 03:16:56,494 - utils - INFO - 1. Visit: http://www.cepii.fr/CEPII/en/bdd_modele/bdd_modele.asp
+2026-02-16 03:16:56,494 - utils - INFO - 2. Navigate to 'Gravity' database
+2026-02-16 03:16:56,494 - utils - INFO - 3. Download the latest version (ZIP file)
+2026-02-16 03:16:56,494 - utils - INFO - 4. Save to: /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/
+2026-02-16 03:16:56,494 - utils - INFO - 5. Run this script again
+2026-02-16 03:16:56,494 - utils - INFO - 
+============================================================
+2026-02-16 03:16:56,494 - utils - INFO - CEPII Gravity acquisition complete
+2026-02-16 03:16:56,494 - utils - INFO - ============================================================
+2026-02-16 03:20:46,467 - utils - INFO - ============================================================
+2026-02-16 03:20:46,467 - utils - INFO - Weight Matrix Construction
+2026-02-16 03:20:46,467 - utils - INFO - ============================================================
+2026-02-16 03:20:46,467 - utils - ERROR - No trade data files found.
+2026-02-16 03:20:47,456 - utils - INFO - ============================================================
+2026-02-16 03:20:47,456 - utils - INFO - Generating BRI Macro & Tariff Report (2013-2023)
+2026-02-16 03:20:47,456 - utils - INFO - Countries: ['CHN', 'IND', 'RUS', 'SAU', 'EGY']
+2026-02-16 03:20:47,456 - utils - INFO - ============================================================
+2026-02-16 03:20:47,456 - utils - INFO - Fetching data from World Bank WDI...
+2026-02-16 03:20:48,006 - utils - INFO - ============================================================
+2026-02-16 03:20:48,006 - utils - INFO - WITS Tariff Data Acquisition
+2026-02-16 03:20:48,006 - utils - INFO - ============================================================
+2026-02-16 03:20:48,006 - utils - WARNING - No WITS tariff files found
+2026-02-16 03:20:48,008 - utils - INFO - 
+============================================================
+2026-02-16 03:20:48,008 - utils - INFO - WITS TARIFF DATA DOWNLOAD INSTRUCTIONS
+2026-02-16 03:20:48,008 - utils - INFO - ============================================================
+2026-02-16 03:20:48,008 - utils - INFO - 
+WITS tariff data must be downloaded manually:
+2026-02-16 03:20:48,008 - utils - INFO - 
+1. Go to: https://wits.worldbank.org/
+2026-02-16 03:20:48,008 - utils - INFO - 2. Click 'Tariff' > 'Tariff Analysis'
+2026-02-16 03:20:48,008 - utils - INFO - 3. Select parameters:
+2026-02-16 03:20:48,008 - utils - INFO -    - Reporter: Select RCEP countries one by one
+2026-02-16 03:20:48,008 - utils - INFO -    - Partner: Select 'All Countries' or specific RCEP partners
+2026-02-16 03:20:48,008 - utils - INFO -    - Year: 2005 to 2024
+2026-02-16 03:20:48,008 - utils - INFO -    - Product: All products (or specific HS codes)
+2026-02-16 03:20:48,008 - utils - INFO -    - Tariff Type: MFN Applied, Preferential, or Both
+2026-02-16 03:20:48,008 - utils - INFO - 4. Click 'Retrieve Data'
+2026-02-16 03:20:48,008 - utils - INFO - 5. Export as CSV or Excel
+2026-02-16 03:20:48,008 - utils - INFO - 6. Save to: /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/wits_tariff_[country]_[year].csv
+2026-02-16 03:20:48,008 - utils - INFO - 
+Key tariff indicators to download:
+2026-02-16 03:20:48,008 - utils - INFO - - Simple Average MFN Applied Tariff
+2026-02-16 03:20:48,008 - utils - INFO - - Weighted Average Applied Tariff
+2026-02-16 03:20:48,008 - utils - INFO - - Preferential Tariff Rates (RCEP)
+2026-02-16 03:20:48,008 - utils - INFO - - Tariff Rate Quotas
+2026-02-16 03:20:48,008 - utils - INFO - 
+RCEP Countries to download:
+2026-02-16 03:20:48,008 - utils - INFO -   AUS: Australia
+2026-02-16 03:20:48,008 - utils - INFO -   BRN: Brunei
+2026-02-16 03:20:48,008 - utils - INFO -   KHM: Cambodia
+2026-02-16 03:20:48,008 - utils - INFO -   CHN: China
+2026-02-16 03:20:48,008 - utils - INFO -   IDN: Indonesia
+2026-02-16 03:20:48,008 - utils - INFO -   JPN: Japan
+2026-02-16 03:20:48,008 - utils - INFO -   KOR: South Korea
+2026-02-16 03:20:48,008 - utils - INFO -   LAO: Laos
+2026-02-16 03:20:48,008 - utils - INFO -   MYS: Malaysia
+2026-02-16 03:20:48,009 - utils - INFO -   MMR: Myanmar
+2026-02-16 03:20:48,009 - utils - INFO -   NZL: New Zealand
+2026-02-16 03:20:48,009 - utils - INFO -   PHL: Philippines
+2026-02-16 03:20:48,009 - utils - INFO -   SGP: Singapore
+2026-02-16 03:20:48,009 - utils - INFO -   THA: Thailand
+2026-02-16 03:20:48,009 - utils - INFO -   VNM: Vietnam
+2026-02-16 03:20:48,009 - utils - INFO - 
+Alternative: Use UNCTAD TRAINS directly
+2026-02-16 03:20:48,009 - utils - INFO - https://trainsonline.unctad.org/
+2026-02-16 03:20:48,009 - utils - INFO - 
+============================================================
+2026-02-16 03:20:48,009 - utils - INFO - 
+============================================================
+2026-02-16 03:20:48,009 - utils - INFO - WITS tariff acquisition complete
+2026-02-16 03:20:48,009 - utils - INFO - ============================================================
+2026-02-16 03:20:58,390 - utils - INFO - ✅ Report saved to: /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/bri_macro_trade_tariff_2013_2023.csv
+2026-02-16 03:20:58,391 - utils - INFO - Total Rows: 55
+2026-02-16 03:21:06,108 - utils - INFO - ============================================================
+2026-02-16 03:21:06,108 - utils - INFO - World Bank WDI Tariff Data Acquisition
+2026-02-16 03:21:06,108 - utils - INFO - ============================================================
+2026-02-16 03:21:06,108 - utils - INFO - Fetching TM.TAX.MRCH.SM.AR.ZS...
+2026-02-16 03:21:13,243 - utils - ERROR - Error fetching TM.TAX.MRCH.SM.AR.ZS: APIError: JSON decoding error (https://api.worldbank.org/v2/en/sources/2/series/TM.TAX.MRCH.SM.AR.ZS/country/AU;BN;KH;CN;ID;JP;KR;LA;MY;MM;NZ;PH;SG;TH;VN/time/YR2005;YR2006;YR2007;YR2008;YR2009;YR2010;YR2011;YR2012;YR2013;YR2014;YR2015;YR2016;YR2017;YR2018;YR2019;YR2020;YR2021;YR2022;YR2023;YR2024?per_page=1000&page=1&format=json)
+2026-02-16 03:21:13,245 - utils - INFO - Fetching TM.TAX.MRCH.WM.AR.ZS...
+2026-02-16 03:21:14,410 - utils - ERROR - Error fetching TM.TAX.MRCH.WM.AR.ZS: APIError: JSON decoding error (https://api.worldbank.org/v2/en/sources/2/series/TM.TAX.MRCH.WM.AR.ZS/country/AU;BN;KH;CN;ID;JP;KR;LA;MY;MM;NZ;PH;SG;TH;VN/time/YR2005;YR2006;YR2007;YR2008;YR2009;YR2010;YR2011;YR2012;YR2013;YR2014;YR2015;YR2016;YR2017;YR2018;YR2019;YR2020;YR2021;YR2022;YR2023;YR2024?per_page=1000&page=1&format=json)
+2026-02-16 03:21:14,411 - utils - INFO - Fetching TM.TAX.MANF.SM.AR.ZS...
+2026-02-16 03:21:15,559 - utils - ERROR - Error fetching TM.TAX.MANF.SM.AR.ZS: APIError: JSON decoding error (https://api.worldbank.org/v2/en/sources/2/series/TM.TAX.MANF.SM.AR.ZS/country/AU;BN;KH;CN;ID;JP;KR;LA;MY;MM;NZ;PH;SG;TH;VN/time/YR2005;YR2006;YR2007;YR2008;YR2009;YR2010;YR2011;YR2012;YR2013;YR2014;YR2015;YR2016;YR2017;YR2018;YR2019;YR2020;YR2021;YR2022;YR2023;YR2024?per_page=1000&page=1&format=json)
+2026-02-16 03:21:15,565 - utils - INFO - Fetching TM.TAX.MANF.WM.AR.ZS...
+2026-02-16 03:21:16,768 - utils - ERROR - Error fetching TM.TAX.MANF.WM.AR.ZS: APIError: JSON decoding error (https://api.worldbank.org/v2/en/sources/2/series/TM.TAX.MANF.WM.AR.ZS/country/AU;BN;KH;CN;ID;JP;KR;LA;MY;MM;NZ;PH;SG;TH;VN/time/YR2005;YR2006;YR2007;YR2008;YR2009;YR2010;YR2011;YR2012;YR2013;YR2014;YR2015;YR2016;YR2017;YR2018;YR2019;YR2020;YR2021;YR2022;YR2023;YR2024?per_page=1000&page=1&format=json)
+2026-02-16 03:21:16,770 - utils - INFO - Fetching TM.TAX.TCOM.SM.AR.ZS...
+2026-02-16 03:21:17,816 - utils - ERROR - Error fetching TM.TAX.TCOM.SM.AR.ZS: APIError: JSON decoding error (https://api.worldbank.org/v2/en/sources/2/series/TM.TAX.TCOM.SM.AR.ZS/country/AU;BN;KH;CN;ID;JP;KR;LA;MY;MM;NZ;PH;SG;TH;VN/time/YR2005;YR2006;YR2007;YR2008;YR2009;YR2010;YR2011;YR2012;YR2013;YR2014;YR2015;YR2016;YR2017;YR2018;YR2019;YR2020;YR2021;YR2022;YR2023;YR2024?per_page=1000&page=1&format=json)
+2026-02-16 03:21:17,817 - utils - INFO - Fetching TM.TAX.TCOM.WM.AR.ZS...
+2026-02-16 03:21:18,898 - utils - ERROR - Error fetching TM.TAX.TCOM.WM.AR.ZS: APIError: JSON decoding error (https://api.worldbank.org/v2/en/sources/2/series/TM.TAX.TCOM.WM.AR.ZS/country/AU;BN;KH;CN;ID;JP;KR;LA;MY;MM;NZ;PH;SG;TH;VN/time/YR2005;YR2006;YR2007;YR2008;YR2009;YR2010;YR2011;YR2012;YR2013;YR2014;YR2015;YR2016;YR2017;YR2018;YR2019;YR2020;YR2021;YR2022;YR2023;YR2024?per_page=1000&page=1&format=json)
+2026-02-16 03:21:18,900 - utils - INFO - 
+============================================================
+2026-02-16 03:21:18,901 - utils - INFO - World Bank tariff acquisition complete
+2026-02-16 03:21:18,901 - utils - INFO - ============================================================
+2026-02-16 03:21:27,797 - utils - INFO - ============================================================
+2026-02-16 03:21:27,797 - utils - INFO - OECD ICIO Table Acquisition
+2026-02-16 03:21:27,797 - utils - INFO - ============================================================
+2026-02-16 03:21:27,797 - utils - INFO - 
+No OECD ICIO files found
+2026-02-16 03:21:27,797 - utils - INFO - 
+============================================================
+2026-02-16 03:21:27,797 - utils - INFO - OECD ICIO DOWNLOAD INSTRUCTIONS
+2026-02-16 03:21:27,797 - utils - INFO - ============================================================
+2026-02-16 03:21:27,797 - utils - INFO - 
+OECD ICIO tables are large files (100+ MB) and require manual download:
+2026-02-16 03:21:27,797 - utils - INFO - 
+Option 1: Direct Download
+2026-02-16 03:21:27,797 - utils - INFO - 1. Visit: https://www.oecd.org/sti/ind/inter-country-input-output-tables.htm
+2026-02-16 03:21:27,797 - utils - INFO - 2. Click on 'Download ICIO tables'
+2026-02-16 03:21:27,797 - utils - INFO - 3. Choose the latest edition (2021 or newer)
+2026-02-16 03:21:27,797 - utils - INFO - 4. Download the full ICIO table (CSV or Excel format)
+2026-02-16 03:21:27,797 - utils - INFO - 5. Save to: /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/oecd_icio_[year].csv
+2026-02-16 03:21:27,797 - utils - INFO - 
+Option 2: OECD.Stat
+2026-02-16 03:21:27,797 - utils - INFO - 1. Go to: https://stats.oecd.org/
+2026-02-16 03:21:27,798 - utils - INFO - 2. Search for 'ICIO' or 'Inter-Country Input-Output'
+2026-02-16 03:21:27,798 - utils - INFO - 3. Select 'OECD Inter-Country Input-Output Database'
+2026-02-16 03:21:27,798 - utils - INFO - 4. Choose dimensions:
+2026-02-16 03:21:27,798 - utils - INFO -    - Countries: Select RCEP members
+2026-02-16 03:21:27,798 - utils - INFO -    - Industries: All industries or specific sectors
+2026-02-16 03:21:27,798 - utils - INFO -    - Year: Latest available
+2026-02-16 03:21:27,798 - utils - INFO - 5. Export as CSV
+2026-02-16 03:21:27,798 - utils - INFO - 
+ICIO Table Structure:
+2026-02-16 03:21:27,798 - utils - INFO - - Rows: Country-Industry combinations (e.g., CHN_C01)
+2026-02-16 03:21:27,798 - utils - INFO - - Columns: Country-Industry combinations + Final Demand
+2026-02-16 03:21:27,798 - utils - INFO - - Values: Intermediate inputs in millions USD
+2026-02-16 03:21:27,798 - utils - INFO - 
+RCEP Countries in OECD ICIO:
+2026-02-16 03:21:27,798 - utils - INFO -   AUS: Australia
+2026-02-16 03:21:27,798 - utils - INFO -   CHN: China
+2026-02-16 03:21:27,798 - utils - INFO -   IDN: Indonesia
+2026-02-16 03:21:27,798 - utils - INFO -   JPN: Japan
+2026-02-16 03:21:27,799 - utils - INFO -   KOR: South Korea
+2026-02-16 03:21:27,799 - utils - INFO -   MYS: Malaysia
+2026-02-16 03:21:27,799 - utils - INFO -   NZL: New Zealand
+2026-02-16 03:21:27,799 - utils - INFO -   PHL: Philippines
+2026-02-16 03:21:27,799 - utils - INFO -   SGP: Singapore
+2026-02-16 03:21:27,799 - utils - INFO -   THA: Thailand
+2026-02-16 03:21:27,799 - utils - INFO -   VNM: Vietnam
+2026-02-16 03:21:27,799 - utils - INFO - 
+Note: Not all RCEP countries are in OECD ICIO
+2026-02-16 03:21:27,799 - utils - INFO - Missing: BRN, KHM, LAO, MMR (aggregated in 'Rest of World')
+2026-02-16 03:21:27,799 - utils - INFO - 
+============================================================
+2026-02-16 03:21:27,799 - utils - INFO - 
+============================================================
+2026-02-16 03:21:27,799 - utils - INFO - OECD ICIO acquisition complete
+2026-02-16 03:21:27,799 - utils - INFO - ============================================================
+2026-02-16 03:21:52,366 - utils - INFO - ============================================================
+2026-02-16 03:21:52,366 - utils - INFO - WIOD (World Input-Output Database) Acquisition
+2026-02-16 03:21:52,366 - utils - INFO - ============================================================
+2026-02-16 03:21:52,366 - utils - INFO - 
+No WIOD files found locally
+2026-02-16 03:21:52,366 - utils - INFO - 
+Attempting to download WIOD tables...
+2026-02-16 03:21:52,366 - utils - INFO - Attempting to download WIOD 2014...
+2026-02-16 03:21:52,366 - utils - INFO - URL: http://www.wiod.org/protected3/data16/wiot_ROW/WIOT2014_Nov16_ROW.xlsx
+2026-02-16 03:21:52,366 - utils - INFO - Downloading from http://www.wiod.org/protected3/data16/wiot_ROW/WIOT2014_Nov16_ROW.xlsx
+2026-02-16 03:21:52,480 - utils - INFO - ============================================================
+2026-02-16 03:21:52,480 - utils - INFO - ADB MRIO Table Acquisition
+2026-02-16 03:21:52,480 - utils - INFO - ============================================================
+2026-02-16 03:21:52,480 - utils - INFO - 
+No ADB MRIO files found
+2026-02-16 03:21:52,480 - utils - INFO - 
+============================================================
+2026-02-16 03:21:52,480 - utils - INFO - ADB MRIO DOWNLOAD INSTRUCTIONS
+2026-02-16 03:21:52,480 - utils - INFO - ============================================================
+2026-02-16 03:21:52,480 - utils - INFO - 
+ADB Multi-Regional Input-Output Database:
+2026-02-16 03:21:52,480 - utils - INFO - Focuses on Asian economies with detailed industry linkages
+2026-02-16 03:21:52,481 - utils - INFO - 
+Download Steps:
+2026-02-16 03:21:52,481 - utils - INFO - 1. Visit: https://mrio.adbx.online/
+2026-02-16 03:21:52,481 - utils - INFO - 2. Register for an account (free)
+2026-02-16 03:21:52,481 - utils - INFO - 3. Navigate to 'Data Download'
+2026-02-16 03:21:52,481 - utils - INFO - 4. Select:
+2026-02-16 03:21:52,481 - utils - INFO -    - Database: ADB MRIO (latest version)
+2026-02-16 03:21:52,481 - utils - INFO -    - Countries: RCEP Asian members
+2026-02-16 03:21:52,481 - utils - INFO -    - Years: Available years (typically 2000-2020)
+2026-02-16 03:21:52,481 - utils - INFO -    - Format: CSV or Excel
+2026-02-16 03:21:52,481 - utils - INFO - 5. Download the MRIO table
+2026-02-16 03:21:52,481 - utils - INFO - 6. Save to: /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/adb_mrio/
+2026-02-16 03:21:52,481 - utils - INFO - 
+Alternative: ADB Data Library
+2026-02-16 03:21:52,481 - utils - INFO - https://data.adb.org/
+2026-02-16 03:21:52,481 - utils - INFO - Search for 'Multi-Regional Input-Output'
+2026-02-16 03:21:52,482 - utils - INFO - 
+RCEP Countries in ADB MRIO:
+2026-02-16 03:21:52,482 - utils - INFO -   CHN: China
+2026-02-16 03:21:52,482 - utils - INFO -   JPN: Japan
+2026-02-16 03:21:52,482 - utils - INFO -   KOR: South Korea
+2026-02-16 03:21:52,482 - utils - INFO -   IDN: Indonesia
+2026-02-16 03:21:52,482 - utils - INFO -   MYS: Malaysia
+2026-02-16 03:21:52,482 - utils - INFO -   PHL: Philippines
+2026-02-16 03:21:52,482 - utils - INFO -   SGP: Singapore
+2026-02-16 03:21:52,482 - utils - INFO -   THA: Thailand
+2026-02-16 03:21:52,482 - utils - INFO -   VNM: Vietnam
+2026-02-16 03:21:52,482 - utils - INFO -   KHM: Cambodia
+2026-02-16 03:21:52,482 - utils - INFO -   LAO: Laos
+2026-02-16 03:21:52,482 - utils - INFO -   MMR: Myanmar
+2026-02-16 03:21:52,482 - utils - INFO -   BRN: Brunei
+2026-02-16 03:21:52,482 - utils - INFO - 
+Note: ADB MRIO has excellent coverage of RCEP Asian economies
+2026-02-16 03:21:52,482 - utils - INFO - Australia and New Zealand may be included in recent versions
+2026-02-16 03:21:52,482 - utils - INFO - 
+============================================================
+2026-02-16 03:21:52,482 - utils - INFO - 
+============================================================
+2026-02-16 03:21:52,482 - utils - INFO - ADB MRIO acquisition complete
+2026-02-16 03:21:52,482 - utils - INFO - ============================================================
+2026-02-16 03:21:58,710 - utils - INFO - Downloaded to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/wiod/WIOT2014_Nov16_ROW.xlsx
+2026-02-16 03:21:58,711 - utils - INFO - Processing WIOT2014_Nov16_ROW.xlsx...
+2026-02-16 03:21:58,730 - utils - ERROR - Error processing WIOD table: Excel file format cannot be determined, you must specify an engine manually.
+2026-02-16 03:21:58,732 - utils - INFO - Attempting to download WIOD 2013...
+2026-02-16 03:21:58,732 - utils - INFO - URL: http://www.wiod.org/protected3/data16/wiot_ROW/WIOT2013_Nov16_ROW.xlsx
+2026-02-16 03:21:58,732 - utils - INFO - Downloading from http://www.wiod.org/protected3/data16/wiot_ROW/WIOT2013_Nov16_ROW.xlsx
+2026-02-16 03:22:03,222 - utils - INFO - Downloaded to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/wiod/WIOT2013_Nov16_ROW.xlsx
+2026-02-16 03:22:03,223 - utils - INFO - Processing WIOT2013_Nov16_ROW.xlsx...
+2026-02-16 03:22:03,224 - utils - ERROR - Error processing WIOD table: Excel file format cannot be determined, you must specify an engine manually.
+2026-02-16 03:22:03,225 - utils - INFO - Attempting to download WIOD 2012...
+2026-02-16 03:22:03,226 - utils - INFO - URL: http://www.wiod.org/protected3/data16/wiot_ROW/WIOT2012_Nov16_ROW.xlsx
+2026-02-16 03:22:03,226 - utils - INFO - Downloading from http://www.wiod.org/protected3/data16/wiot_ROW/WIOT2012_Nov16_ROW.xlsx
+2026-02-16 03:22:07,360 - utils - INFO - Downloaded to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/wiod/WIOT2012_Nov16_ROW.xlsx
+2026-02-16 03:22:07,361 - utils - INFO - Processing WIOT2012_Nov16_ROW.xlsx...
+2026-02-16 03:22:07,362 - utils - ERROR - Error processing WIOD table: Excel file format cannot be determined, you must specify an engine manually.
+2026-02-16 03:22:07,364 - utils - INFO - 
+============================================================
+2026-02-16 03:22:07,364 - utils - INFO - WIOD acquisition complete
+2026-02-16 03:22:07,364 - utils - INFO - ============================================================
+2026-02-16 03:22:13,832 - utils - INFO - ============================================================
+2026-02-16 03:22:13,832 - utils - INFO - OECD TiVA GVC Indicators Acquisition
+2026-02-16 03:22:13,832 - utils - INFO - ============================================================
+2026-02-16 03:22:13,833 - utils - INFO - 
+No TiVA GVC files found
+2026-02-16 03:22:13,833 - utils - INFO - 
+============================================================
+2026-02-16 03:22:13,833 - utils - INFO - OECD TiVA GVC INDICATORS DOWNLOAD
+2026-02-16 03:22:13,833 - utils - INFO - ============================================================
+2026-02-16 03:22:13,833 - utils - INFO - 
+OECD TiVA provides comprehensive GVC participation metrics:
+2026-02-16 03:22:13,833 - utils - INFO - 
+Key Indicators to Download:
+2026-02-16 03:22:13,833 - utils - INFO - 1. EXGR - Gross exports by industry and partner
+2026-02-16 03:22:13,833 - utils - INFO - 2. EXGR_FVA - Foreign value added in gross exports
+2026-02-16 03:22:13,833 - utils - INFO - 3. EXGR_DVA - Domestic value added in gross exports
+2026-02-16 03:22:13,833 - utils - INFO - 4. EXGR_DDC - Domestic value added re-imported
+2026-02-16 03:22:13,833 - utils - INFO - 5. FD_VA - Value added embodied in final demand
+2026-02-16 03:22:13,833 - utils - INFO - 6. IMGR_FVA - Foreign value added in imports
+2026-02-16 03:22:13,833 - utils - INFO - 
+Download Steps:
+2026-02-16 03:22:13,833 - utils - INFO - 1. Visit: https://stats.oecd.org/
+2026-02-16 03:22:13,834 - utils - INFO - 2. Search for 'TiVA' or navigate to Trade > TiVA
+2026-02-16 03:22:13,834 - utils - INFO - 3. Select 'TiVA 2021 Principal Indicators'
+2026-02-16 03:22:13,834 - utils - INFO - 4. Choose dimensions:
+2026-02-16 03:22:13,834 - utils - INFO -    - Country: Select all RCEP countries
+2026-02-16 03:22:13,834 - utils - INFO -    - Partner: Select all RCEP countries
+2026-02-16 03:22:13,834 - utils - INFO -    - Industry: All industries or specific sectors
+2026-02-16 03:22:13,834 - utils - INFO -    - Indicator: Select GVC indicators listed above
+2026-02-16 03:22:13,835 - utils - INFO -    - Year: Latest available (usually 2018)
+2026-02-16 03:22:13,835 - utils - INFO - 5. Export as CSV
+2026-02-16 03:22:13,835 - utils - INFO - 6. Save to: /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/oecd_tiva_gvc_indicators.csv
+2026-02-16 03:22:13,835 - utils - INFO - 
+Alternative: OECD Data Explorer
+2026-02-16 03:22:13,835 - utils - INFO - https://data-explorer.oecd.org/
+2026-02-16 03:22:13,835 - utils - INFO - Navigate to: Trade > Trade in Value Added (TiVA) > Principal Indicators
+2026-02-16 03:22:13,835 - utils - INFO - 
+RCEP Countries in OECD TiVA:
+2026-02-16 03:22:13,835 - utils - INFO -   AUS: Australia
+2026-02-16 03:22:13,835 - utils - INFO -   CHN: China
+2026-02-16 03:22:13,835 - utils - INFO -   IDN: Indonesia
+2026-02-16 03:22:13,835 - utils - INFO -   JPN: Japan
+2026-02-16 03:22:13,835 - utils - INFO -   KOR: South Korea
+2026-02-16 03:22:13,835 - utils - INFO -   MYS: Malaysia
+2026-02-16 03:22:13,836 - utils - INFO -   NZL: New Zealand
+2026-02-16 03:22:13,836 - utils - INFO -   PHL: Philippines
+2026-02-16 03:22:13,836 - utils - INFO -   SGP: Singapore
+2026-02-16 03:22:13,836 - utils - INFO -   THA: Thailand
+2026-02-16 03:22:13,836 - utils - INFO -   VNM: Vietnam
+2026-02-16 03:22:13,836 - utils - INFO - 
+Note: BRN, KHM, LAO, MMR not in OECD TiVA
+2026-02-16 03:22:13,836 - utils - INFO - 
+============================================================
+2026-02-16 03:22:13,836 - utils - INFO - 
+============================================================
+2026-02-16 03:22:13,836 - utils - INFO - OECD TiVA GVC acquisition complete
+2026-02-16 03:22:13,836 - utils - INFO - ============================================================
+2026-02-16 03:22:14,282 - utils - INFO - ============================================================
+2026-02-16 03:22:14,282 - utils - INFO - GVC Indices and Supply Chain Metrics Calculation
+2026-02-16 03:22:14,282 - utils - INFO - ============================================================
+2026-02-16 03:22:14,283 - utils - INFO - 
+This script calculates various GVC metrics from acquired data:
+2026-02-16 03:22:14,283 - utils - INFO - 1. Trade Complementarity Index
+2026-02-16 03:22:14,283 - utils - INFO - 2. Supply Chain Dependency Indicators
+2026-02-16 03:22:14,283 - utils - INFO - 3. Revealed Comparative Advantage (Intermediates)
+2026-02-16 03:22:14,284 - utils - INFO - 4. GVC Position Index
+2026-02-16 03:22:14,286 - utils - INFO - 
+============================================================
+2026-02-16 03:22:14,286 - utils - INFO - GVC indices calculation complete
+2026-02-16 03:22:14,286 - utils - INFO - ============================================================
+2026-02-16 03:22:14,286 - utils - INFO - 
+NOTE: Full implementation requires:
+2026-02-16 03:22:14,286 - utils - INFO - - Product-level bilateral trade data (from Comtrade/WITS)
+2026-02-16 03:22:14,286 - utils - INFO - - Processed input-output tables (from ICIO/WIOD/MRIO)
+2026-02-16 03:22:14,287 - utils - INFO - - HS-BEC concordance for intermediate goods classification
+2026-02-16 03:22:14,680 - utils - INFO - ============================================================
+2026-02-16 03:22:14,680 - utils - INFO - Country-Level Network Preparation
+2026-02-16 03:22:14,680 - utils - INFO - ============================================================
+2026-02-16 03:22:14,680 - utils - INFO - Loading bilateral trade data...
+2026-02-16 03:22:14,681 - utils - WARNING - No bilateral trade data found!
+2026-02-16 03:22:14,681 - utils - INFO - Please run bilateral trade acquisition scripts first
+2026-02-16 03:22:14,681 - utils - ERROR - No trade data available
+2026-02-16 03:22:14,681 - utils - INFO - Please run data acquisition scripts first:
+2026-02-16 03:22:14,681 - utils - INFO - - 01_comtrade_bilateral.py
+2026-02-16 03:22:14,681 - utils - INFO - - 04_cepii_gravity.py
+2026-02-16 03:22:22,295 - utils - INFO - ============================================================
+2026-02-16 03:22:22,296 - utils - INFO - Industry-Level Network Preparation
+2026-02-16 03:22:22,296 - utils - INFO - ============================================================
+2026-02-16 03:22:22,296 - utils - INFO - Loading input-output table data...
+2026-02-16 03:22:22,296 - utils - WARNING - No IO table data found!
+2026-02-16 03:22:22,297 - utils - ERROR - No IO table data available
+2026-02-16 03:22:22,297 - utils - INFO - Please run IO table acquisition scripts first:
+2026-02-16 03:22:22,297 - utils - INFO - - 08_oecd_icio.py
+2026-02-16 03:22:22,297 - utils - INFO - - 09_wiod.py
+2026-02-16 03:22:22,297 - utils - INFO - - 10_adb_mrio.py
+2026-02-16 03:22:22,854 - utils - INFO - ============================================================
+2026-02-16 03:22:22,854 - utils - INFO - Product-Level Network Preparation
+2026-02-16 03:22:22,854 - utils - INFO - ============================================================
+2026-02-16 03:22:22,854 - utils - INFO - 
+WARNING: Product-level networks are very large and complex
+2026-02-16 03:22:22,854 - utils - INFO - Recommended for specific product case studies only
+2026-02-16 03:22:22,854 - utils - INFO - Consider using HS2 (chapter level) for manageable network size
+2026-02-16 03:22:22,854 - utils - INFO - Loading HS2 product-level trade data...
+2026-02-16 03:22:22,855 - utils - WARNING - No Comtrade product data found
+2026-02-16 03:22:22,855 - utils - ERROR - No product-level trade data available
+2026-02-16 03:22:22,855 - utils - INFO - Please run: 01_comtrade_bilateral.py with product detail
+2026-02-16 03:22:31,472 - utils - INFO - ============================================================
+2026-02-16 03:22:31,472 - utils - INFO - Eora MRIO Data Acquisition
+2026-02-16 03:22:31,472 - utils - INFO - ============================================================
+2026-02-16 03:22:31,472 - utils - INFO - 
+No Eora MRIO files found
+2026-02-16 03:22:31,473 - utils - INFO - 
+============================================================
+2026-02-16 03:22:31,473 - utils - INFO - EORA MRIO DOWNLOAD INSTRUCTIONS
+2026-02-16 03:22:31,473 - utils - INFO - ============================================================
+2026-02-16 03:22:31,473 - utils - INFO - 
+Eora Global Supply Chain Database:
+2026-02-16 03:22:31,473 - utils - INFO - High-resolution MRIO tables covering 190 countries.
+2026-02-16 03:22:31,473 - utils - INFO - 
+Download Steps:
+2026-02-16 03:22:31,473 - utils - INFO - 1. Visit: https://worldmrio.com/
+2026-02-16 03:22:31,473 - utils - INFO - 2. Register/Login (Academic/Non-commercial use is often free)
+2026-02-16 03:22:31,473 - utils - INFO - 3. Navigate to 'Data' or 'Download'
+2026-02-16 03:22:31,473 - utils - INFO - 4. Select 'Eora26' (aggregated) or 'Eora Full' (high resolution)
+2026-02-16 03:22:31,474 - utils - INFO -    - Eora26 is easier to handle but less detailed.
+2026-02-16 03:22:31,474 - utils - INFO -    - Eora Full is very large and complex.
+2026-02-16 03:22:31,474 - utils - INFO - 5. Download the IO table for the desired year (e.g., 2015-2021)
+2026-02-16 03:22:31,474 - utils - INFO -    - Look for 'Basic Price' tables if available.
+2026-02-16 03:22:31,474 - utils - INFO - 6. Save to: /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/eora_mrio/
+2026-02-16 03:22:31,474 - utils - INFO - 
+RCEP Countries in Eora:
+2026-02-16 03:22:31,474 - utils - INFO - Eora covers ALL RCEP countries, including:
+2026-02-16 03:22:31,474 - utils - INFO - AUS, BRN, KHM, CHN, IDN, JPN, KOR, LAO, MYS, MMR, NZL, PHL, SGP, THA, VNM
+2026-02-16 03:22:31,474 - utils - INFO - 
+============================================================
+2026-02-16 03:22:31,474 - utils - INFO - 
+============================================================
+2026-02-16 03:22:31,474 - utils - INFO - Eora acquisition setup complete
+2026-02-16 03:22:31,474 - utils - INFO - ============================================================
+2026-02-16 03:27:19,759 - utils - INFO - ============================================================
+2026-02-16 03:27:19,759 - utils - INFO - Country-Level Network Preparation
+2026-02-16 03:27:19,759 - utils - INFO - ============================================================
+2026-02-16 03:27:19,759 - utils - INFO - Loading bilateral trade data...
+2026-02-16 03:27:19,782 - utils - INFO - Loaded master_bilateral_trade_2005_2024.csv: 52 rows
+2026-02-16 03:27:19,783 - utils - INFO - Combined 52 total observations
+2026-02-16 03:27:19,783 - utils - INFO - Aggregating to country level for year 2022...
+2026-02-16 03:27:19,787 - utils - INFO - Aggregated to 5 country pairs
+2026-02-16 03:27:19,788 - utils - INFO - Saved 5 rows to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/bilateral_trade_country_level_2022.csv
+2026-02-16 03:27:19,788 - utils - INFO - Creating country-level trade network...
+2026-02-16 03:27:19,788 - utils - INFO - Network created: 21 nodes, 5 edges
+2026-02-16 03:27:19,788 - utils - INFO - Calculating network metrics...
+2026-02-16 03:27:19,935 - utils - INFO - 
+============================================================
+2026-02-16 03:27:19,935 - utils - INFO - Summary: Country Network Metrics
+2026-02-16 03:27:19,935 - utils - INFO - ============================================================
+2026-02-16 03:27:19,935 - utils - INFO - Rows: 21
+2026-02-16 03:27:19,935 - utils - INFO - Columns: 8
+2026-02-16 03:27:19,938 - utils - INFO - Memory: 0.00 MB
+2026-02-16 03:27:19,938 - utils - INFO - Columns: country, country_name, in_degree, out_degree, total_degree, betweenness, closeness, pagerank
+2026-02-16 03:27:19,938 - utils - INFO - ============================================================
+
+2026-02-16 03:27:19,940 - utils - INFO - Saved 21 rows to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/country_network_metrics_2022.csv
+2026-02-16 03:27:19,940 - utils - INFO - Exporting network files...
+2026-02-16 03:27:19,941 - utils - INFO - Saved 5 rows to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/country_network_edges_2022.csv
+2026-02-16 03:27:19,942 - utils - INFO - Saved 21 rows to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/country_network_nodes_2022.csv
+2026-02-16 03:27:19,942 - utils - INFO - Saved GML to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/country_network_2022.gml
+2026-02-16 03:27:19,965 - utils - INFO - Saved GraphML to /Users/wuyilin/CURSOR/RCEP Traffic /data_acquisition/data/country_network_2022.graphml
+2026-02-16 03:27:19,966 - utils - INFO - 
+============================================================
+2026-02-16 03:27:19,966 - utils - INFO - Country network preparation complete
+2026-02-16 03:27:19,966 - utils - INFO - ============================================================

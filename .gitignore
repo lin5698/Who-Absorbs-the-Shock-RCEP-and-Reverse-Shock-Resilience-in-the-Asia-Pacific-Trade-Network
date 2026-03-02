@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+
+# Exclude oversized source data files
+data_acquisition/data/world_development_indicators.csv
+repo/data/archive/world_development_indicators.csv
